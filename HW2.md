@@ -20,58 +20,74 @@ Include the following information:
 ## Prepare Databricks
 Go to the link for [Databricks on GCP](https://cloud.google.com/databricks?hl=en) and then click "Try on Marketplace".
 
-<img width="1098" alt="Screenshot 2025-01-24 at 5 20 29 PM" src="https://github.com/user-attachments/assets/b5661508-5b88-4578-b74b-051a8a7200c6" />
+<img width="1098" alt="image" src="https://github.com/user-attachments/assets/2706b2cf-87ac-4fe7-bc2c-45d27c601010" />
 
 Then click the checkbox and `agree and continue` in the bottom right.
 
-<img width="563" alt="Screenshot 2025-01-24 at 5 25 04 PM" src="https://github.com/user-attachments/assets/246d31b6-8f6d-492f-98da-b65b8f583079" />
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/86fddc7c-c853-423a-ad8f-d1d8c66808a8" />
 
 Then click the "Databricks" box and then on the next page click "Subscribe". 
-<img width="808" alt="Screenshot 2025-01-24 at 5 27 13 PM" src="https://github.com/user-attachments/assets/e02370c1-984a-48d0-b597-0ec61b7c8094" />
-<img width="754" alt="Screenshot 2025-01-24 at 5 27 39 PM" src="https://github.com/user-attachments/assets/dba5c7d4-a6bf-4164-9285-d7bd0f3ebf33" />
+<img width="808" alt="image" src="https://github.com/user-attachments/assets/79862dbd-cab7-48b9-8644-cbb76e9879a7" />
+
+<img width="754" alt="image" src="https://github.com/user-attachments/assets/3c2a7742-11c2-4469-ba7c-90437c295ef2" />
+
+
 
 After hitting subscribe, you'll be brought to a new page. Scroll down, under "Purchase details" select your billing account, then click the box at the bottom and click "Subscribe".
-<img width="940" alt="Screenshot 2025-01-24 at 5 33 49 PM" src="https://github.com/user-attachments/assets/a60f4b9a-a9ad-4bf3-b4a5-998586f06568" />
+<img width="940" alt="image" src="https://github.com/user-attachments/assets/6b6766c3-a5db-44a5-b3ce-ef3d2da46117" />
+
 
 After this, we're going to need to make an account with Databricks through their portal. Click the "Sign Up With Databricks" button. 
 
-<img width="1507" alt="Screenshot 2025-01-24 at 5 34 44 PM" src="https://github.com/user-attachments/assets/cf869089-4593-4fd5-a9ba-97b34737dbec" />
+<img width="1507" alt="image" src="https://github.com/user-attachments/assets/7f288f1f-b9f2-423e-b7ce-29ba88c844dd" />
 
 You want to create an organization name (this can be anything) and then click Login with Google and then select the Google account you're using for the Google Cloud Platform setup. This will process for a little bit, and it's possible it may require you to refresh the pop-up window and re-enter the information. Once it's done the pop-up window should close and you can go back to the other GCP tab you had open. 
 
-<img width="1214" alt="Screenshot 2025-01-24 at 5 36 15 PM" src="https://github.com/user-attachments/assets/732df1c8-9184-486d-80ab-87c192c5a3ad" />
+<img width="1214" alt="image" src="https://github.com/user-attachments/assets/0dc1a461-c2c3-4998-9fb7-dbd62c474b64" />
 
 On that tab you should see that it has changed (or refresh it first) to have a button that says "Manage on Provider." Click this button to be taken to the Databricks site. 
-<img width="1509" alt="Screenshot 2025-01-24 at 5 37 08 PM" src="https://github.com/user-attachments/assets/68e30f55-b9e0-4c87-98ac-8c9d3b39c65a" />
+
+<img width="1509" alt="image" src="https://github.com/user-attachments/assets/43e420e2-7297-41e6-adff-248f34f2a3ad" />
+
 Once on the databricks site, you can once again login with Google. It will prompt you select a subscription plan. This comes with a 14-day free trial, which will be enough to cover all the usage we need. 
-<img width="1511" alt="Screenshot 2025-01-24 at 5 37 26 PM" src="https://github.com/user-attachments/assets/2a18a3f6-bd5f-4262-8c51-5777508a9b5c" />
-<img width="1512" alt="Screenshot 2025-01-24 at 5 37 40 PM" src="https://github.com/user-attachments/assets/2b128edc-41f9-4a4e-a74e-f8adcfce2ae6" />
+
+<img width="1511" alt="image" src="https://github.com/user-attachments/assets/a2cdf245-5dce-46e7-8300-3582b42d6fea" />
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/9d236cd8-ff22-49d4-856f-8326c50c4c50" />
 
 ## Create Workspace
 Next, we're going to go back to our GCP page. In the upper part of the screen, you'll see a box with your project name. In the example image, there is a red-box drawn around this. Click that box and you'll be shown an overlay that lists the project and it's project ID. Copy this project ID as it will be needed to create a Databricks Workspace. This ID is also labelled with a red box. in the second image below.
-<img width="881" alt="Screenshot 2025-01-24 at 5 39 03 PM" src="https://github.com/user-attachments/assets/1f476014-de22-442f-9ee9-1a88b6f2d7c1" />
-<img width="762" alt="Screenshot 2025-01-24 at 5 40 22 PM" src="https://github.com/user-attachments/assets/d353054a-77e5-47e7-af38-3abed499e09d" />
+
+<img width="881" alt="image" src="https://github.com/user-attachments/assets/57b27960-dd24-43b3-9531-3f9f1e30df84" />
+
+<img width="762" alt="image" src="https://github.com/user-attachments/assets/57905d80-84f1-4443-9298-25c40831679c" />
 
 Once you're logged in, you'll see a workspaces tab on the left hand nav bar. Select that and select "Create Workspace." You will be brought to a page which asks you to give the workspace a name ***make this data342 to fit with the pre-written SQL workload***, pick a GCP region (I chose us-east-1), and paste the project ID you copied in the previous step. Then click "Create workspace."
-<img width="1511" alt="Screenshot 2025-01-24 at 5 38 02 PM" src="https://github.com/user-attachments/assets/c8a1bb5f-0229-4f43-9e8c-8068c92d78f8" />
-<img width="1029" alt="Screenshot 2025-01-24 at 5 41 17 PM" src="https://github.com/user-attachments/assets/632ba2ee-18fb-47f2-9428-460904d18731" />
 
+<img width="1511" alt="image" src="https://github.com/user-attachments/assets/de404b8d-1235-45bf-bdef-42256f265146" />
 
+<img width="1029" alt="image" src="https://github.com/user-attachments/assets/40afaa0e-f445-404a-960b-77cf0df49347" />
 
 ## Create Table
 Finally, we want to create a table! Go back to the Workspaces page and wait for the workspace to be created and for the status to be "Running". Once that's the case, hit the "Open" button labelled in the image below.
-<img width="1311" alt="Screenshot 2025-01-24 at 5 48 41 PM" src="https://github.com/user-attachments/assets/a0be0031-a986-4c25-a4af-8681bcc56da6" />
+
+<img width="1311" alt="image" src="https://github.com/user-attachments/assets/25223b77-7869-4fd0-b75e-354bb5a1ef06" />
+
 You will be taken to a page with a nav-bar in the left hand side. Select Catalog, then select the workspace name you chose earlier (for me it was Data342) and click default. Then click "Create > Create Table" as shown below. 
-<img width="1512" alt="Screenshot 2025-01-24 at 5 49 43 PM" src="https://github.com/user-attachments/assets/7f86da80-e259-4820-b7ea-e9ce890e4c82" />
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/aa0ced77-4048-4135-b63c-6def0b715a6c" />
+
 You will be brought to a page where you are asked to upload files. Upload the yellow-cab data Parquet files you downloaded for February through December 2023 you downloaded earlier from the NYC taxi site into a single table. Once these are done uploading, you'll be taken to the following page, where you can rename the table under Table Name.
-<img width="1512" alt="Screenshot 2025-01-24 at 5 52 56 PM" src="https://github.com/user-attachments/assets/300baf8a-7dcb-4e10-af83-359af118a556" />
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/96b554e3-8123-4122-89c1-0dd41a7caf71" />
 
 Once the table is done, you are ready to query data!
 
 ## Run SQL Queries and Record Performance
 
 Go to the SQL Editor in the nav-bar on the left. This will open a window where you can write or paste SQL queries. You can access the table by using the format `WORKSPACE_NAME.default.TABLE_NAME`, i.e. `data342.default.taxi_data` as shown below. You can then run the query and see the results and the runtime as well in that same page. 
-<img width="1510" alt="Screenshot 2025-01-24 at 6 11 53 PM" src="https://github.com/user-attachments/assets/bfd3cfd0-6c56-441d-8fc9-110cf50b4abe" />
+
+<img width="1510" alt="image" src="https://github.com/user-attachments/assets/94b3d54f-5b48-4130-aab6-24f5f830e795" />
 
 ## Setup BigQuery
 Setup BigQuery the same as in HW1, but be sure to import data from February to December 2023 yellow-cab Parquet files into a single BigQuery **INTERNAL** table. Repeat this, but do it for an **EXTERNAL** table as well. You will run each query against both table options. Name your dataset within BigQuery **Data342** to avoid having to edit the pre-written SQL workload.
